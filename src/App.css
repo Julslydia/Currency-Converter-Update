@@ -1,38 +1,104 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 3%;
 }
 
-.App-link {
-  color: #61dafb;
+.info-text {
+  width: 100%;
+  height: 30px;
+  margin-top: 30px;
+}
+.no-name-span {
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.currency-info {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.amount-convert {
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.select-currency-option {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.no-name-span {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 400px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container-title {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .title {
+    justify-content: space-between;
+  }
+
+  .currency-info {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  .select-currency-option {
+    margin-top: 0px;
+  }
+
+  .amount-convert-before-inp {
+    margin-top: 0px;
+  }
+
+  .amount-convert-after-inp {
+    margin-left: 20px;
   }
 }
